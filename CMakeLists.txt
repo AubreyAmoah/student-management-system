@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.20)
 project(StudentManagementSystem
     VERSION 1.0.0
     DESCRIPTION "Student Management System with SQLite database"
-    LANGUAGES CXX
+    LANGUAGES C CXX
 )
 
 # Set C++ standard

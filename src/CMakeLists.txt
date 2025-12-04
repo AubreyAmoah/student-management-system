@@ -6,7 +6,7 @@ if(USE_SYSTEM_SQLITE)
     endif()
 else()
     # Include bundled SQLite3 or download it
-    add_subdirectory(${CMAKE_SOURCE_DIR}/third_party/sqlite3)
+    add_subdirectory(${CMAKE_SOURCE_DIR}/third_party/sqlite3 ${CMAKE_BINARY_DIR}/sqlite3)
     set(SQLite3_INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/third_party/sqlite3)
     set(SQLite3_LIBRARIES sqlite3)
 endif()
